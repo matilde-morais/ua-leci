@@ -1,8 +1,9 @@
 ### Professor:
-Alina Trifan
-Osvaldo Pacheco
+- Alina Trifan
+- Osvaldo Pacheco
 
 ### Recursos:
+- https://www.w3schools.com/
 - https://horstmann.com/codecheck/python-questions.html
 - https://runestone.academy/user/login
 - https://pythontutor.com/python-compiler.html#mode=edit
