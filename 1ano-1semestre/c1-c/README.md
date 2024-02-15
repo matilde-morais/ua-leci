@@ -1,8 +1,8 @@
 ### Professor:
-João Breda
+- João Breda
 
 ### Explicação:
-ASFormação
+- ASFormação
 
 ### Recursos:
 - http://calculo.wikidot.com/
