@@ -1,0 +1,4 @@
+Tipo de Atração,Nome,País,Endereço,Contacto,Latitude,Longitude,Distância,Fuso Horário,Moeda
+"['catering', 'catering.cafe']",La Brasserie D’en Haut,France,"La Brasserie D’en Haut, Rue du Petit Solesmes, 59730 Saint-Python, France",N/A,3.4877964,50.1903595994098,0.311,Etc/GMT-3,EUR (€)
+"['catering', 'catering.cafe']",Foyer,France,"Foyer, 13 Rue Émile Zola, 59730 Solesmes, France",N/A,3.5036284999999996,50.18436479941109,1.6,Etc/GMT-3,EUR (€)
+"['catering', 'catering.restaurant']",Cantine,France,"Cantine, 13 Rue Émile Zola, 59730 Solesmes, France",N/A,3.5036554,50.183818699411226,1.63,Etc/GMT-3,EUR (€)
