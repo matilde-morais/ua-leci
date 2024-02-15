@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Integração de Componentes em Páginas WEB</title>
+        
+        <!-- Bootstrap minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <!-- Personal Styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- Highcharts JavaScript -->
+        <script src="http://code.highcharts.com/highcharts.js"></script> <!-- recursos de JS que permitem desenhar gráficos -->
+        <!-- Graphic Draw JavaScript -->
+        <script src="js/graphic.js"></script> <!-- script que desenha o gráfico -->
+        <!-- LeaftLet CSS e JavaScript -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+        <!-- JavaScript for map design and other functionalities -->
+        <script src="js/map.js"></script>
+    </head>
+
+    <body>
+        <div class="container"> <!-- content container -->
+            <h1> 9. Integração de componentes em páginas Web </h1>
+            <!-- https://getbootstrap.com/docs/5.3/components/ -->
+
+            <nav class="navbar navbar-default"> <!-- barra de navegação -->
+                <div class="navbar-header"> <!-- cabeçalho da barra de navegação -->
+                    <a class="navbar-brand" href="#"> Introdução à Engenharia Informática </a> <!-- link que se chama Introdução à Engenharia Informática -->
+                </div>
+
+                <div class="navbar-collapse collapse"> <!-- conteúdo da barra de navegação -->
+                    <ul class="nav navbar-nav"> <!-- lista de itens da barra de navegação -->
+                        <li class="active"> <a href="#topicA"> Topic A - Popups </a> </li> <!-- item ativo -->
+                        <li> <a href="#topicB"> Topic B - Graphics </a> </li> <!-- item inativo -->
+                        <li class="dropdown"> <!-- sub-menu -->
+                            <a href="#topicC" class="dropdown-toggle" data-toggle="dropdown"> Topic C <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="#topicCmaps"> Topic C - Maps </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#topicCimage"> Topic C - Image </a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right"> <!-- lista de itens da barra de navegação à direita -->
+                        <li class="active"> <a href="about.html" target="_blank"> <span class="glyphicon glyphicon-user"></span> About </a> </li> <!-- item ativo -->
+                        <!-- "_blank" no atributo target significa que o link será aberto em uma nova janela ou guia do navegador -->
+                        <!-- <span> está sendo usado como um contêiner para aplicar estilos ou scripts a um ícone específico (representado pelas classes "glyphicon" e "glyphicon-user") dentro do texto "About". -->
+                </div>
+            </nav>
+
+            <h2 id ="topicA" style="text-align:center"> Topic A - Popups </h2>
+            <div id="myPopup" class="modal fade"> <!-- popup com class="modal fade", que é um elemento do Bootstrap -->
+                <div class="modal-dialog"> 
+                    <div class="modal-content"> <!-- conteúdo do popup -->
+                        <div class="modal-header"> <!-- cabeçalho do popup -->
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> <!-- botão de fechar o popup -->
+                            <h4 class="modal-title">Popup Title</h4> <!-- título do popup -->
+                        </div>
+                        <div class="modal-body"> <!-- corpo do popup -->
+                            <p>Popup Contents</p>
+                        </div>
+                        <div class="modal-footer"> <!-- rodapé do popup -->
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <!-- botão de fechar o popup -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myPopup"> Popup Throw </button> <!-- botão que abre o popup -->
+
+            <h2 id ="topicB" style="text-align:center"> Topic B - Graphics </h2>
+            <div id="myGraph" style="width: 400px; height: 300px;"> 
+                <select id="graphicType" onchange="graphic()">
+                    <option value="line"> Line Chart </option>
+                    <option value="bar"> Bar Chart </option>
+                    <option value="column"> Column Chart </option>
+                </select>
+                <button class="btn btn-primary" onclick="draw()"> Draw Graphic </button>
+            </div>
+            
+            <h2 id ="topicC" style="text-align:center"> Topic C - Maps and Image </h2>
+            <div class="row">
+                <div class="columnleft" style="text-align: center">
+                    <h2 id="topicCmaps"> Topic C - Maps </h2>
+                <div id="myMap" style="width: 550px; height: 450px"></div>
+
+            </div>
+                ...
+            </div>
+
+        </div>
+    </body>
+</html>
+
+<!-- exercicio 9.12 nao acabado-->
