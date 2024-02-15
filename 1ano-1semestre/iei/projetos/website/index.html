@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Grupo 59 </title> <!-- Tab title -->
+
+        <!-- CSS -->
+        <style>
+			.navbar-brand h5 {
+			font-size: 30px;
+						}
+			
+			h1{
+				text-align:center;
+				}
+		</style>
+
+        <!-- desenhar gráfico -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="http://code.highcharts.com/highcharts.js"></script>	
+			<script src="js/grafico.js"></script>
+        
+        <!--estilos-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Library of styles -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- scrollToSection.js -->
+        <script src="js/scrollToSection.js"></script>
+        <!-- dropdown.js -->
+        <script src="js/dropdown.js"></script>
+
+    </head>
+
+    <body style="background-color:Azure"> <!-- background color of page -->
+
+        <!-- Bootstrap and other JavaScript libraries -->
+       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script> <!-- LeaftLet JavaScript -->
+
+        <div> <!-- logo on top of page -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+              <div class="container-fluid">
+                
+                <a href="https://www.ua.pt/"> <!-- link to university website -->
+                <img src="images/ua.png" style="height: 60px; width: 150px;"> <!-- logo image -->
+                </a>
+      
+              </div>
+            </nav>
+        </div>
+
+        <div class="container"> <!-- content container -->
+
+            <br>
+            <div class="card text-center"> <!-- card on top of page -->
+                <div class="card-header">
+                    <h1 style="text-align:center"> A Era da Inteligência Artificial </h1> <!-- title on top of page-->
+                </div>
+            </div>
+            <br>
+        
+            <nav class="navbar navbar-default"> <!-- navigation bar -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"> <b>A Era da Inteligência Artificial</b> </a> <!-- title on navegation bar -->
+                </div>
+
+                <div class="navbar-collapse collapse"> <!-- content on navigation bar-->
+                    <ul class="nav navbar-nav">  <!-- list of itens on navigation bar -->
+
+                        <li class="active"> <a href="inicio.html" target="_blank"> <b>Início</b> </a> </li> <!-- inicio -->
+
+                        <li class="dropdown" onmouseover="showSubmenu(this)" onmouseout="hideSubmenu(this)"> <!-- o que é a IA? -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="scrollToSection('oqueeaia')"> O que é a IA? </a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="#" onclick="scrollToSection('historia')"> A história da IA </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('tipos')"> Os tipos de IA </a> </li>
+                            </ul>
+                        </li>
+
+                        <li> <a href="#" onclick="scrollToSection('explosao')"> A rápida explosão da IA </a> </li> <!-- a rápida explosão da IA -->
+
+                        <li class="dropdown" onmouseover="showSubmenu(this)" onmouseout="hideSubmenu(this)">  <!-- os usos atuais da IA -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="scrollToSection('usosatuais')"> Os usos atuais da IA </a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="#" onclick="scrollToSection('saude')"> Área da Saúde </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('educacao')"> Área da Educação </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('av')"> Assistência Virtual </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('financas')"> Área Financeira </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('vantagens')"> Vantagens </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('desvantagens')"> Desvantagens </a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown" onmouseover="showSubmenu(this)" onmouseout="hideSubmenu(this)">  <!-- o que esperar a curto e médio prazo? -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="scrollToSection('prazo')"> O que esperar a curto e médio prazo? </a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="#" onclick="scrollToSection('avancos')"> Avanços Tecnológicos Emergentes </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('aplicacoes')"> Aplicações Práticas em Diversos Setores </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('desafios')"> Desafios Éticos e Regulamentares </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('trabalho')"> Impacto nas Dinâmicas do Mercado de Trabalho </a> </li>
+                                <li class="divider"></li>
+                                <li> <a href="#" onclick="scrollToSection('inovacoes')"> Inovações Contínuas e Colaboração Internacional </a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="active"> <a href="analise.html" target="_blank"> <b>Análise</b> </a> </li> <!-- análise -->
+
+                        <li class="active"> <a href="conclusao.html" target="_blank"> <b>Conclusão</b> </a> </li> <!-- conclusão -->
+
+                        <li class="active"> <a href="apendice.html" target="_blank"> <b>Apêndice</b> </a> </li> <!-- apêndice -->
+
+                    </ul> <!-- end of list of itens on navigation bar -->
+
+                    <ul class="nav navbar-nav navbar-right"> <!-- content on navigation bar in the right -->
+                        <li class="active"> <a href="about.html" target="_blank"> <span class="glyphicon glyphicon-user"></span> Acerca </a> </li> <!-- acerca -->
+                    </ul>
+
+                </div> <!-- end of content on navigation bar -->
+
+            </nav> <!-- end of navigation bar -->
+
+
+            <!-- Main Content -->
+            <div>
+                <br>
+                <h1 id ="oqueeaia"> O que é a IA </h1>
+                <br>
+                <p> A IA é uma ferramenta transformadora, representada através da ciência da computação, que se centra no desenvolvimento de algoritmos e sistemas que têm o potencial de transformar a maneira como vivemos e trabalhamos, uma vez que podem realizar tarefas que, de outra forma, exigeriam interferência humana. </p>
+                <p> De acordo com o artigo <i>"O que é a inteligência artificial e como funciona?"</i>, publicado pelo Parlamento Europeu, em 2020, a IA é "a capacidade de uma máquina reproduzir competências humanas, como é o caso do raciocínio, a aprendizagem, o planeamento e a criatividade". <a href="about.html#bibliografia"> [1] </a> </p>
+                <p> O desenvolvimento desta tecnologia possui um vasto leque de abordagens, entre as quais o ML, no qual os algoritmos são escritos para que estes reconheçam padrões, efetuem previsões e aprendam como lidar com a situação que lhes é apresentada, como é o caso, por exemplo, do <i>ChatGPT</i>, jogos de xadrez e ainda carros de condução autónoma. </p>
+                <br>
+                
+                <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.1">
+							<img src="images/chatgpt.jpg" class="imagem">
+								<figcaption><h5>Figura 2.1: <i>ChatGPT</i></h5></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+                <br>
+                <h1 id ="historia"> A história da IA </h1>
+                <br>
+                <p> Apesar de nos dias de hoje o tema da IA ser muito popular, esta porção da ciência é a realização de um sonho do Homem, com raízes em mitos, ideias e histórias que exploram a criação de seres artificiais com capacidades inteligentes, de forma semelhante ao ser humano. </p>
+                <br>               
+                
+                <div style="text-align: center">
+                    <figure id="fig2.2">
+                        <div id="myGraph" class="imagem"></div>
+                            <button class="btn btn-primary" onclick="draw()">Desenhar Gráfico</button>
+                            <br>
+                            <caption><h5>Figura 2.2: Crescimento da receita da IA corporativa, em milhares de dólares (US), ao longo dos anos</h5></figcaption>
+                    </figure>
+                </div>
+                
+                <br>
+                <p> O primeiro grande passo para a criação desta tecnologia foi dado pelo matemático inglês Alan Turing, conhecido como o pai da computação. Durante a 2ª Guerra Mundial, o matemático concebeu a ideia da máquina de Turing, que permitiria, mais tarde, realizar qualquer cálculo que fosse descrito por um algoritmo. </p>
+                <p> O verdadeiro impulso para a criação do primeiro campo de pesquisa focado no desenvolvimento da IA só foi dado em 1956, quando um conjunto de cientistas desenvolveram o primeiro programa deste tipo, denominado <i>Logic Theorist</i>, durante uma conferência, no campus Darthmouth College. </p>
+                <br>
+                
+                <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.3">
+							<img src="images/DartmouthCollege.jpg" class="imagem">
+							<figcaption><h5>Figura 2.3: Dartmouth College</h5></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<br>				                
+                <p> No ano de 1997, o desenvolvimento desta ferramenta veio a demonstrar-se bastante importante, quando o programa de computador <i>Deep Blue</i>, desen-volvido pela <i>International Business Machines Corporation</i> (IBM), com sede nos Estados Unidos da América, derrotou o campeão mundial de xadrez Garry Kasparov. Este computador possuía 256 co-processadores, capazes de analisar aproximadamente 200 milhões de posições, por segundo. </p>
+                <p> Já uns anos mais tarde, em 2011, um computador, criado pela mesma empresa, foi colocado á prova, sendo programado para responder a perguntas. </p>
+                <p> Posteriormente, no dia 14 de fevereiro de 2016, foi anunciada a <i>SOPHIA</i>, um robô com características humanas, com capacidades para produzir cerca de 60 expressões faciais. Este robô, criado por uma empresa de Hong Kong e projetado para aprender e adaptar-se às vivências humanas, consegue realizar reconhecimento facial e processamento de dados. </p>
+                <br>
+                
+                <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.4">
+							<img src="images/SHOPIA.jpg" class="imagem">
+							<figcaption><h5>Figura 2.4: Robô <i>SOPHIA</i></h5></figcaption>
+						</figure>
+					</div>
+				</div>
+                
+                <br>
+                <p> Este robô foi o primeiro, na história da tecnologia, a receber cidadania, neste caso, da Arábia Saudita, em outubro de 2017. </p>
+                <p> À medida que a IA continua a evoluir e se interseta com outros ramos de ciência, como a neurociência e a robótica, novos desafios são criados e, com isso, o seu desenvolvimento nunca está estagnado. <a href="about.html#bibliografia"> [6] </a> </p>
+                <br>
+                <h1 id ="tipos"> Os tipos de IA </h1>
+                <br>
+                <p> Como já vimos, é inquestionável que a presença da IA no nosso quotidiano está a tornar-se cada vez mais vulgar, uma vez que esta permite emular o funcionamento de um ser humano. </p>
+                <p> É consensual que a IA pode-se dividir em vários grupos, contudo o seu número não o é, já que existe um variado leque de abordagens e técnicas para criar sistemas capazes de realizar tarefas. Por este motivo, em seguida, iremos debruçarmo-nos em quatro divisões: a IA fraca, a IA forte, o ML e a IA Quântica. </p>
+                <br>
+                <h2 id ="fraca" style="text-align:center"> IA Fraca ou Estreita </h2>
+                <br>
+                <p> A IA fraca refere-se a sistemas computacionais projetados para realizar tarefas específicas. Um exemplo comum deste tipo de IA são as AVs, como a <i>Siri</i> e a <i>Alexa</i>, que executam comandos ativados por voz, efetuando tarefas simples.</p>
+                <p> Outros exemplos da IA estreita incluem algoritmos de recomendação, em plataformas de <i>streaming</i>, como, por exemplo, na <i>Netflix</i> e na <i>Hulu</i>, e <i>softwares</i> de reconhecimento facial, tais como os usados para desbloquear <i>smartphones</i> com biometria facial. <a href="about.html#bibliografia"> [7] </a> </p>
+                <br>
+                
+                <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.5">
+							<img src="images/alexa.jpg" class="imagem">
+							<figcaption><h5>Figura 2.5: <i>Alexa</i></h5></figcaption>
+						</figure>
+					</div>
+				</div>
+				                
+                <br>
+                <h2 id ="forte" style="text-align:center"> IA Forte ou Geral </h2>
+                <br>
+                <p> A IA forte representa o culminar da aspiração tecnológica, procurando criar sistemas capazes de replicar a inteligência humana. </p>
+                <p> Este gênero de IA está destinado a realizar qualquer tarefa intelectual que um humano consiga realizar, com recurso a consciência e compreensão textual própria. <a href="about.html#bibliografia"> [9] [10] </a> </p>
+                <p> Embora a IA geral represente um campo de pesquisa desafiador e complexo, existem múltiplas aplicações para o uso desta ferramenta. </p>
+                <p> Dentro dos seus vastos exemplos de uso, podemos contar com diagnósticos médicos avançados, uma apricabilidade notável que se distingue no recente caso de um sistema de IA que consegue detetar cancro da mama com até 5 anos de antecdência. Para este programa, cientistas norte-americanos treinaram o sistema com milhares de mamografias, sendo que, em 2016, foi introduzido ao algoritmo mais de 13,6 mil mamografias. As mulheres envolvidas no estudo foram observadas desde então até 2021, pelo que, com apenas 5 anos de observação, através dos dados extraídos e da sua análise, o sistema de rastreio foi desenvolvido. <a href="about.html#bibliografia"> [11] [12] </a> </p>
+                <br>
+                <h2 id ="machine" style="text-align:center"> Machine Learning </h2>
+                <br>
+                <p> A IA revolucionou o mundo da tecnologia e, dentre desse ramo, o ML surgiu como uma abordagem fundamental. </p>
+                <p> O ML permite que sistemas computacionais apredam a melhorar o seu desempenho. Através de algoritmos complexos, estes sistemas podem analisar dados, identificar padrões e tomar decisões de forma completamente autónoma. </p>
+                <p> Este instrumento permite que os computadores processem grandes quantidades de dados e aprendam com eles, para que realizem tarefas com cada vez mais eficiência. No entanto, a utilização deste <i>software</i> levanta questões de ética e privacidade. Por isto, à medida que este evolui, é crucial encontrar-se um equilíbrio entre o potencial inovador e os desafios encontrados, para que seja utilizado de forma responsável, já que o seu futuro promete progressos fascinantes, conforme as fronteiras da IA se vão expandindo. </p>
+                <br>
+                
+                <div class="row">
+					<div class="center" style="text-align: center">
+							<figure id="fig2.6">
+								<img src="images/machine_learning.jpg" class="imagem" 
+									<figcaption><h5>Figura 2.6: ML e os conceitos que o rodeiam</h5></figcaption>
+							</figure>
+							</div>
+				</div>
+				
+				<br>
+                <h2 id ="quantica" style="text-align:center"> IA Quântica </h2>
+                <br>
+                <p> A IA quântica visa explorar a capacidade única de realizar cálculos intensivos. A sua abordagem pode acelerar significativamente a resolução de problemas complexos, como, por exemplo, simulações moleculares. No entanto, a implementação desta prática ainda se encontra em estágios iniciais, enfrentando problemas tecnológicos e de engenharia, pois a necessidade de preservar a coerência quântica representa um obstáculo relevante. <a href="about.html#bibliografia"> [14] </a> </p>
+                <p> À medida que a pesquisa avança neste ramo, estima-se que a IA quântica possa vir a alcançar a análise de bases de dados massivas. </p>
+                <p> O campo do desenvolvimento da IA quântica é bastante dinâmico, uma vez que, conforme novas descobertas vão sendo feitas, possibilita a utilização deste recurso noutros campos. </p>
+                <br>
+                <h1 id ="explosao" style="text-align:center"> A rápida explosão da IA </h1>
+                <br>
+                <p> A vertiginosa evolução da IA configura um dos acontecimentos mais marcantes na era da tecnologia moderna. </p>
+                <p> Para chegar ao progresso atual, foram necessários diversos promotores, de entre os quais o aumento da capacidade computacional. A realização de tarefas de forma mais eficiente e a criação de algoritmos mais complexos deve-se ao acréscimo da potência de processamento. Já a aceleração de tarefas desempenhadas pela IA foi possível graças à arquitetura de <i>hardware</i> especializado, como, por exemplo, GPUs. <a href="about.html#bibliografia"> [15] </a> </p> <!-- LINK PARA BIBLIOGRAFIA -->
+                <br>
+                
+                <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.7">
+							<img src="images/gpu.jpg" class="imagem">
+								<figcaption><h5>Figura 2.7: Exemplo de GPUs</h5></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<br>
+				<p> As massivas bases de dados disponíveis foram também cruciais para este fenômeno. Os novos sistemas de IA são capazes de identificar padrões elaborados devido ao algoritmos de ML, cada vez mais desenvolvidos. <a href="about.html#bibliografia"> [17] </a> </p> <!-- LINK PARA BIBLIOGRAFIA -->
+                <p> O avanço e o uso aumentado de tecnologias deste tipo deu-se também, em parte, por conta do interesse e investimento significativo de empresas globais da área tecnológica. Uma "pesquisa com mais de 1.300 CEOs pelo mundo mostra que a grande maioria deles (72%) considera que o investimento em inteligência artificial (IA) é prioritário [...]", menciona o artigo <i>"Maioria dos CEOs considera prioritário investimento em inteligência artificial, revela pesquisa"</i>, publicado em outubro de 2023, pelo Exame. <a href="about.html#bibliografia"> [18] </a> </p>
+                <p> Este interesse monetário suscitou uma competição tecnológica, levando a progressos muito mais rápidos. </p>
+                <br>
+                <h1 id ="usosatuais" style="text-align:center"> Os usos atuais da IA </h1>
+                <br>
+                <p> Nos dias de hoje, a IA é utilizada em várias secções da sociedade, sendo que, em seguida, iremos explorar quatro exemplos: na saúde, na educação, na assistência virtual e nas finanças. </p>
+                <br>
+                <h2 id ="saude" style="text-align:center"> Área da Saúde </h2>
+                <br>
+                <p> Estes programas são um recurso que permitiu variados avanços na área da saúde, sendo usados, por exemplo, em diagnósticos medicinais, uma vez que algoritmos de DP (um método que ensina o computador a processar dados de forma semelhante ao cérebro humano) têm a capacidade de analisar imagens médicas e, possivelmente, identificar sinais precoces de doenças. <a href="about.html#bibliografia"> [19] [20] [21] </a> </p>
+                <br>
+                                
+                <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.8">
+							<img src="images/cadeia.jpg" class="imagem">
+							<figcaption><h5>Figura 2.8: Posição do DP na área da IA</h5></figcaption>
+						</figure>
+					</div>
+				</div>
+							 
+                <br>
+                <h2 id ="educacao" style="text-align:center"> Área da Educação </h2>
+                <br>
+                <p> Atualmente, a IA é utilizada no campo educacional, de forma a adaptar o processo de aprendizagem individual, onde <i>Intelligent Tutoring Systems</i> (ITSs) modificam, consoante a performance e necessidade de cada estudante, o conteúdo utilizado e testado. Estas ferramentas são capazes ainda de notificar os domínios onde o estudante tem mais dificuldades. <a href="about.html#bibliografia"> [23] [24] </a> Alguns exemplos de plataformas de ITSs são: <a href="about.html#bibliografia"> [25] </a> </p>
+                <ul>
+                    <li> <h4><i>Algebra Tutor</i>, desenvolvido pelo <i>Pittsburgh Advanced Cognitive Tutor Center</i>, na Universidade Carnegie Mellon </h4></li>
+                    <li> <h4><i>SQL-Tutor</i>, desenvolvido pelo <i>Intelligent Computer Tutoring Group</i> (ICTG), na Universidade de Canterbury </h4></li>
+                    <li> <h4><i>SmartTutor</i>, desenvolvido na Universidade de Hong Kong </h4></li>
+                    <li> <h4><i>ESC101-ITS</i>, desenvolvido no <i>Indian Institute of Technology</i>, em Kanpur </h4></li>
+                </ul>
+                <p> Outro possível uso, neste setor, seria a avaliação automática de trabalhos, testes, etc. </p>
+                <br>
+                <h2 id ="av" style="text-align:center"> Assistência Virtual </h2>
+                <br>
+                <p> A <i>Siri</i>, <i>Alexa</i> e <i>Google Assistant</i>, são exemplos de AVs que utilizam IA para as suas funções, fazendo parte do dia-a-dia do cidadão atual, uma vez que são capazes de marcar compromissos, fazer chamadas, responder a mensagens, fazer pesquisas e entregar os resultados mais relevantes, enviar <i>e-mails</i>, etc. </p>
+                <br>
+                
+                 <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.9">
+							<img src="images/assistants.png" class="imagem">
+							<figcaption><h5>Figura 2.9: Exemplos de AVs</h5></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+				<br>
+                <p> Para o seu funcionamento, utilizam ML, tal como Processamento de Linguagem Natural (PLN). <a href="about.html#bibliografia"> [27] [28] </a> </p>
+                <br>
+                <h2 id ="financas" style="text-align:center"> Área Financeira </h2>
+                <br>
+                <p> No campo financeiro, sistemas de IA são aplicados para detetar atividades suspeitas, prever tendências de mercado e analisar grandes volume de dados. Além disso, conselhos de investimento adaptados ao indivíduo também são possíveis, através de robôs de consultoria, que integram este recurso. <a href="about.html#bibliografia"> [29] [30] </a>  </p>
+                <br>
+                
+                <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.10">
+							<img src="images/finances.jpg" class="imagem">
+							<figcaption><h5>Figura 2.10: Usos da IA nas finanças e os sistemas neles utilizados</h5></figcaption>
+						</figure>
+					</div>
+				</div>
+				
+                <br>
+                <p> Alguns exemplos de plataformas líderes na contribuição de recursos de IA, nas áreas financeiras, são: <a href="about.html#bibliografia"> [32] </a> </p>
+                <ul>
+                    <li> <h4><i>Salesforce</i>, uma empresa baseada em gerenciamento de relações com o cliente, que oferece automatização de processos e integração, principalmente para setores financeiros, melhorando a eficiência e a satisfação do cliente </h4></li>
+                    <li> <h4><i>Brighterion</i>, uma plataforma de IA que analisa dados em tempo real, dando soluções caracterizadas para tomas de decisões importantes, especialmente em setores como finanças e saúde, tendo alta precisão na identificação de fraudes e atenuação de riscos </h4></li>
+                    <li> <h4><i>Upstart</i>, uma plataforma de empréstimos que emprega ML para analisar uma grande variedade de bases de dados e entregar aos utilizadores empréstimos rápidos e fiáveis </h4></li>
+                </ul>
+                <br>
+                <h1 id ="vantagens" style="text-align:center"> Vantagens </h1>
+                <br>
+                <p> A IA, ao ser utilizada em diversos setores, não apenas traz inovação, mas também oferece um conjunto extenso de vantagens fundamentais. </p>
+                <p> A influência positiva da IA é evidente em vários aspetos, tais como: </p>
+                <ol>
+                    <li> <h3><b>Otimização de Processos:</b> A automatização de tarefas repetitivas fomenta a eficiência operacional, apressa a execução deste tipo de atividades e possibilita uma atribuição mais eficaz de recursos. </h3></li>
+                    <li> <h3><b>Redução de Erros:</b> A IA contribui consideravelmente para a atenuação de erro humano, assegurando procedimentos mais precisos e fiáveis, o que é bastante importante em setores sensíveis. </h3></li>
+                    <li> <h3><b>Processamento de Grandes Volumes de Dados:</b> A habilidade de trabalhar com massivos conjuntos de dados é um cunho distintivo da IA, possibilitando análises mais abrangentes e insights importantes, cruciais para a toma de decisões planeadas e informadas. </h3></li>
+                    <li> <h3><b>Identificação de Padrões:</b> Para além de processar grandes bases de dados, a IA tem a capacidade de detetar padrões complexos, originando informações relevantes para a toma de decisões informadas, em diversos setores da sociedade, como, por exemplo, a indústria, medicina, finanças, etc. </h3></li>
+                    <li> <h3><b>Experiências Personalizadas:</b> A aptidão da IA de aprender com as situações em que é colocada e adaptar-se para tal permite a entrega de interações e/ou respostas caracterizadas em serviços e produtos, aumentando a satisfação do cliente/utilizador e melhorando o relacionamento entre o cliente e a empresa. </h3></li>
+                    <li> <h3><b>Sistemas de Recomendação:</b> A integração de programas de recomendação, baseados em IA, torna a experiência do cliente melhor, propiciando sugestões individuais, algo que é especialmente claro em plataformas de <i>streaming</i>, como a <i>Netflix</i>, comércio virtual, através de <i>marketing</i>, e redes sociais, como o <i>Instagram</i> e o <i>TikTok</i>. </h3></li>
+                    <li> <h3><b>Detecção de Atividades Suspeitas:</b> A IA executa um papel essencial na identificação de atividades suspeitas, aumentando a segurança em setores nas áreas das finanças e cibersegurança. </h3></li>
+                    <li> <h3><b>Reforço da Cibersegurança:</b> A análise prenunciadora possibilitada pela IA é utilizada para prever e prevenir ameaças cibernéticas, garantindo a proteção competente de dados sensíveis e sistemas críticos. </h3></li>
+                    <li> <h3><b>Diagnósticos Precisos:</b> Na área da saúde, a IA contribui para diagnósticos médicos mais precisos e, por vezes, a sua descoberta com mais antecedência e tratamentos caracterizados, aproveitando dados clínicos para dar abordagens mais eficazes. </h3></li>
+                    <li> <h3><b>Avanços na Pesquisa Médica:</b> A análise de dados genômicos, promovida pela IA, está a conduzir progressos significativos na pesquisa medicinal, acelerando descobertas e ajudando ao movimento da medicina personalizada. </h3></li>
+                </ol>
+                <p> Estas são apenas algumas, das muitas, maneiras como a IA transforma, de forma positiva, várias partes do mundo atual, destacando-se não apenas pela eficiência, mas também pela inovação nos diversos campos, moldando a era da IA de maneiras nunca antes vistas. </p>
+                <br>
+                <h1 id ="desvantagens" style="text-align:center"> Desvantagens </h1>
+                <br>
+                <p> Embora a IA ofereça as vantagens descritas anteriormente, e muitas outras, é importante mencionar as desvantagens que lhe estão associadas. </p> <br>
+                <h2 id ="desvantagens" style="text-align:center"> Impacto no Emprego </h2>
+                <p> Um dos maiores desafios no avanço da IA é o potencial impacto no emprego. À medida que os sistemas automatizados e os algoritmos de aprendizagem automática se tornam mais sofisticados, alguns empregos tradicionais podem ser substituídos, perdendo-se-os. Empregos que antigamente eram dados como certos, como, por exemplo, designers gráficos, podem, agora, ser trocados por programas projetados para essas funções. </p> <br>
+                <h2 id ="desvantagens" style="text-align:center"> Vieses nos Algoritmos </h2>
+                <p> Os algoritmos de IA podem herdar preconceitos existentes nos seus dados de treino. Se os dados usados para treinar esses algoritmos forem tendenciosos, os resultados poderão refletir e amplificar esses preconceitos. Isto pode levar à discriminação em áreas como o recrutamento, o crédito e a justiça criminal, e agravar a desigualdade social. <a href="about.html#bibliografia"> [33] [34] </a> </p> <br>
+                <h2 id ="desvantagens" style="text-align:center"> Privacidade e Segurança dos Dados </h2>
+                <p> A utilização da IA exige a recolha e tratamento de dados pessoais. Isto levanta preocupações significativas sobre privacidade e segurança de dados. Se não forem implementadas proteções fortes, estes sistemas podem representar uma ameaça à privacidade pessoal, com consequências potencialmente adversas. </p> <br>
+                <h2 id ="desvantagens" style="text-align:center"> Falta de Transparência </h2>
+                <p> Muitos algoritmos funcionam como caixas pretas, dificultando a compreensão completa das suas tomas de decisões. A falta de transparência nos processos de decisão pode levar à desconfiança entre os utilizadores. <a href="about.html#bibliografia"> [35] </a> </p> <br>
+                <h2 id ="desvantagens" style="text-align:center"> Desafios Éticos </h2>
+                <p> A utilização da IA traz desafios éticos, como a autonomia das máquinas, a responsabilidade pela tomada de decisões automatizadas e a necessidade de definir limites éticos. A inovação deve ser equilibrada, com considerações éticas, para maximizar os benefícios e minimizar os riscos. <a href="about.html#bibliografia"> [36] [37] </a> </p> <br>
+                <br>
+                <h1 id ="prazo" style="text-align:center"> O que esperar a curto e médio prazo? </h1>
+                <br>
+                <p> O desenvolvimento da IA nos últimos anos levantou questões relevantes sobre o que podemos esperar a curto e médio prazo, pelo que, em seguida, iremos explorar tendências e perspetivas futuras para a IA. <a href="about.html#bibliografia"> [38] [39] </a> </p> 
+                <br>
+                <h2 id ="avancos" style="text-align:center"> Avanços Tecnológicos Emergentes </h2>
+                <br>
+                <p> Melhorar os algoritmos de ML e aumentar o poder computacional ajudará a criar sistemas mais eficientes e inteligentes. Espera-se que a integração de tecnologias como o DP melhore a capacidade da IA de compreender e resolver tarefas complexas. <a href="about.html#bibliografia"> [40] [41] </a> </p>
+                <br>
+                <h2 id ="aplicacoes" style="text-align:center"> Aplicações Práticas em Diversos Setores </h2>
+                <br>
+                <p> A utilização da IA em vários setores da sociedade é uma tendência predominante que deverá continuar a curto e médio prazo. Setores como saúde, finanças, educação e manufatura estão a adotar soluções baseadas em IA, para aumentar a sua eficiência operacional, porém esta expansão deverá passar para além destes setores. <a href="about.html#bibliografia"> [42] [43] </a> </p>
+                <br>
+                
+                <div class="row">
+					<div class="center" style="text-align: center">
+						<figure id="fig2.11">
+							<img src="images/future.png" class="imagem"> 
+							<figcaption><h5>Figura 2.11: Exemplos de setores onde a expansão da IA poderá acontecer</h5></figcaption>
+						</figure>	
+					</div>
+				</div>
+				
+                <br>
+                <h2 id ="desafios" style="text-align:center"> Desafios Éticos e Regulamentares </h2>
+                <br>
+                <p> À medida que a IA se torna cada vez mais integrada na vida quotidiana, surgem desafios éticos e dilemas regulamentares. O estabelecimento de padrões éticos para o desenvolvimento e utilização do recurso torna-se imperativo. As preocupações relativas à privacidade, segurança e preconceitos algorítmicos exigirão atenção significativa, tanto da sociedade como dos decisores políticos. <a href="about.html#bibliografia"> [45] </a> </p>
+                <br>
+                <h2 id ="trabalho" style="text-align:center"> Impacto nas Dinâmicas do Mercado de Trabalho </h2>
+                <br>
+                <p> A proliferação da tecnologia de IA suscitou apreensão quanto ao impacto no mercado de trabalho. A automatização de tarefas pode exigir modificações nas competências dos trabalhadores, sublinhando a importância da implementação de iniciativas de requalificação, para facilitar uma transição perfeita à crescente prevalência da IA. <a href="about.html#bibliografia"> [46] </a> </p>
+                <br>
+                <h2 id ="inovacoes" style="text-align:center"> Inovações Contínuas e Colaboração Internacional </h2>
+                <br>
+                <p> A cooperação internacional é imperativa para a disseminação da IA. Dado que os desafios e as perspetivas se estendem para além das fronteiras nacionais, a colaboração entre nações, instituições e universidades é vital para o progresso e para garantir que a IA sirva para a melhoria da humanidade como um todo. </p>
+                <br>
+                <br>
+            </div>
+
+        </div> <!-- end of content container -->
+
+        <div> <!-- footer -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark bottom">
+              <div class="container-fluid">
+                <a class="navbar-brand"s><h5>Introdução à Engenharia Informática</h5></a>
+              </div>
+            </nav>
+        </div>
+
+    </body>
+
+</html>
