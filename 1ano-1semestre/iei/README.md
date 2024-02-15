@@ -1,5 +1,5 @@
 ### Professor:
-Óscar Pereira
+- Óscar Pereira
 
 ### Recursos:
 - https://www.w3schools.com/
