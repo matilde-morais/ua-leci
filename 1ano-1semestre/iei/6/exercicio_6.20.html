@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cabeçalho do documento HTML</title>
+    </head>
+    <body>
+        Corpo do documento HTML
+        <br>
+        Exemplos de texto em <b>negrito</b> e em <i>itálico</i>.
+        <br>
+        <h2>6.2.5 Capítulos e secções</h2>
+        <h2>6.2.6 Lista de itens</h2>
+        <ol> <!-- listas ordenadas-->
+            <li value="100">elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+        </ol>
+        <ul> <!-- listas não ordenadas -->
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+        </ul>
+        <h2>6.2.7 Tabelas</h2>
+        <table border=1>
+            <tr><th> a </th><th> b </th><th>extra</th></tr> <!-- th = table header -->
+            <tr><td> c </td><td> d </td><td>extra</td></tr>
+            <tr><td> e </td><td> f </td><td>extra</td></tr>
+        </table>
+        <table border=1>
+            <colgroup> 
+                <col span="3" style="background-color:pink"> <!-- colgroup = grupo de colunas -->
+                <col style="background-color:purple">
+            </colgroup>
+            <caption>Tabela</caption> <!-- caption = título da tabela -->
+            <tr><th> c1 </th><th> c2 </th><th> c3 </th><th> c4 </th></tr>
+            <tr><td> a </td><td colspan=2> b </td><td rowspan=2> c </td></tr> <!-- colspan = colunas ocupadas, rowspan = linhas ocupadas -->    
+            <tr><td> d </td><td colspan=2> e </td></tr>
+        </table>
+        <h2>6.2.8 Hiper-referências</h2>
+        Este é o documento 1.
+        <br>
+        <a href="file:///run/user/1000/doc/2b39afef/exercicio_6.17_documento_2.html" target="_blank"> Clique aqui para ir para o Documento 2, numa nova janela. </a>
+        <br>
+        <a href="file:///run/user/1000/doc/2b39afef/exercicio_6.17_documento_2.html" target="_self"> Clique aqui para ir para o Documento 2, na mesma janela. </a>
+        <br>
+        <a href="file:///run/user/1000/doc/2b39afef/exercicio_6.17_documento_2.html" target="_top"> Clique aqui para ir para o Documento 2, na parent frame. </a>
+        <br>
+        <a href="file:///run/user/1000/doc/2b39afef/exercicio_6.17_documento_2.html" target="_parent"> Clique aqui para ir para o Documento 2, no full body da janela. </a>
+        <h2>6.2.9 Imagens</h2>
+        <img src="ua.jpg" alt="texto-alternativo"> <!-- segundo a norma HTML a utilização do atributo alt é obrigatória! -->
+        <br>
+        <img src="imagem_nao_existente.jpg" alt="imagem que nao existe">
+        <h2>6.2.10 Divisões</h2>
+        <!-- organizar conteúdos na página em blocos ou divisões. -->
+        ua.pt tem uma organização de divisões onde o cabeçalho, conteúdo e rodapé estão presentes.
+        <br>
+        code.ua.pt tem uma organização de divisões onde o cabeçalho e conteúdo estão presentes.
+        <br>
+        publico.pt tem uma organização de divisões onde o cabeçalho, conteúdo, barra lateral e rodapé estão presentes.
+        <br>
+        news.ycombinator.com tem uma organização de divisões onde o cabeçalho, conteúdo e rodapé estão presentes.
+    </body>
+</html>
