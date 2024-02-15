@@ -1,6 +1,6 @@
 ### Professor:
-António Navarro
-Augusto Silva
+- António Navarro
+- Augusto Silva
 
 ### Recursos:
 - https://www.boolean-algebra.com/
