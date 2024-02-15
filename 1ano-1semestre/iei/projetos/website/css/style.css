@@ -1,0 +1,52 @@
+.imagem{
+    width: 800px;
+    height:400px;
+    margin: auto; 
+    display: block;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+
+/*texto solto*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: Azure;
+    font-size:40px;
+}
+/*titulodapagina*/
+
+h1 {
+    color:black; /* Cor do texto do título h1 */
+    font-size:40px;
+}
+
+/*paragrafo*/
+p {
+    font-size: 20px; /* Tamanho do texto do parágrafo */
+    line-height: 1.5; /* Espaçamento entre linhas do parágrafo */
+    text-align:justify;
+    margin: 100px;
+}
+
+/*subtitulo e imagens*/
+h2{
+	font-family:'Arial', sans-serif;
+    background-color: Azure;
+    font-size:35px;
+    text-align:center;
+    }
+
+/*sem nada*/
+h3{
+	font-family:'Arial', sans-serif;
+    background-color: Azure;
+    font-size:30px;
+    }
+
+/*legendas*/
+h6{
+	font-family:'Arial', sans-serif;
+    background-color: Azure;
+    font-size:15px;
+    }
