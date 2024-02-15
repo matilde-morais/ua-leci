@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <script src="completecalculator.js"></script>
+    </head>
+    <body>
+        <h1> 8.2 Inclusão numa página </h1>
+        <h1> 8.3 Sintaxe </h1>
+        <h2> 8.3.1 Funções </h2>
+        <h2> 8.3.2 Condições </h2>
+        <h2> 8.3.3 Ciclos </h2>
+        <h2> 8.4 Interação com o DOM </h2>
+        <h2> 8.4.1 Eventos </h2>
+        <h3> Exemplo 4</h3>
+
+        <input id="op1" value="2">
+        <span id="op-view">+</span> <!-- recebeu id -->
+        <input id="op2" value="3">
+        <span>=</span>
+        <input id="res" value=""><br>
+
+        <!-- creates a dropdown menu, with the id="operation". the event onchange runs the function operation() whenever the selected option is changed. -->
+        <select id="operation" onchange="operation()">
+            <option value="+"> Addition </option> <!-- opção 1 -->
+            <option value="-"> Subtraction </option> <!-- opção 2 -->
+        </select>
+
+        <!-- creates a button that when you click on does the calculate() function -->
+        <button onclick="calculate()">Calculate</button>
+    </body>
+</html>

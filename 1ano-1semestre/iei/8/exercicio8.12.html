@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function calculate(){
+                // get the elements
+                var x = document.getElementById( "op1" );
+                var y = document.getElementById( "op2" );
+                var res = document.getElementById( "res" );
+                
+                // get the values and transform them to float
+
+                var valorX = parseFloat(x.value);
+                var valorY = parseFloat(y.value);
+
+                // show the values
+
+                console.log( valorX ); // mostra o primeiro operador na consola
+                console.log( valorY ); // mostra o segundo operador na consola
+                
+                // calculate the sum
+                resValor = valorX + valorY;
+
+                // show the result
+
+                res.value = resValor;
+                console.log(res.value); // mostra o resultado da soma na consola
+            }
+        </script>
+    </head>
+    <body>
+        <h1> 8.2 Inclusão numa página </h1>
+        <h1> 8.3 Sintaxe </h1>
+        <h2> 8.3.1 Funções </h2>
+        <h2> 8.3.2 Condições </h2>
+        <h2> 8.3.3 Ciclos </h2>
+        <h2> 8.4 Interação com o DOM </h2>
+        <h2> 8.4.1 Eventos </h2>
+        <h3> Exemplo 2</h3>
+
+        <input id="op1" value="2">
+        <span>+</span>
+        <input id="op2" value="3">
+        <span>=</span>
+        <input id="res" value="">
+        <script> onload = calculate() </script>
+        <!-- the onload event is triggered when the document has completely loaded -->
+    </body>
+</html>
