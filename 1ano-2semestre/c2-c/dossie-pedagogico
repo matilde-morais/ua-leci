@@ -1,0 +1,56 @@
+*Cálculo II - C*
+
+DOCENTES:
+
+Responsável: Natália Martins (natalia@ua.pt)
+António Pereira (antoniop@ua.pt)
+Domenico Catalano (domenico@ua.pt)
+Helena Gonçalves (helenag@ua.pt)
+Paolo Vettori (pvettori@ua.pt)
+Tatiana Tchemisova (tatiana@ua.pt)
+
+PROGRAMA:
+- **Séries numéricas.** Séries geométricas e séries de Mengoli. Critérios de convergência para séries de termos não negativos: critério do integral (aplicação ao estudo das séries de Dirichlet); critério de comparação e critério do limite; critérios de convergência para séries de termos quaisquer: Critério de Cauchy e Critério de D’Alembert; Séries alternadas. Critério de Leibniz.
+- **Séries de funções.** Domínio de convergência. Convergência pontual e convergência uniforme. Séries de potências. Raio de convergência. Intervalo de convergência. Séries de Taylor. Representação de funções em série de Taylor/MacLaurin. Séries de Fourier. Construção de séries de senos e de séries de cossenos. Convergência da série de Fourier (Teorema de Dirichlet).
+- **Cálculo Diferencial em Rn**. Funções reais de várias variáveis reais: domínio, contradomínio, gráfico, conjuntos de nível. Limites e continuidade; derivadas parciais; derivadas e gradiente; diferenciabilidade e plano tangente; aproximação linear. Exploração gráfica usando software adequado (por exemplo, GeoGebra). Regra da cadeia; derivação implícita. Extremos locais, globais e condicionados. Método dos Multiplicadores de Lagrange. Aplicação a problemas de otimização.
+
+AVALIAÇÃO:
+O tipo de avaliação pré-definido para esta unidade curricular é a **avaliação discreta**. A avaliação discreta será constituída por dois testes escritos presenciais (T1 e T2).
+
+O **Teste T1** decorrerá no dia **17 de abril às 15h30.**
+O **Teste T2** será realizado na época normal de exames.
+
+A classificação final (**CF**) é dada por **CF = 0,5*T1 + 0,5*T2**
+
+O **Exame Final** será realizado na época normal de exames.
+
+** Escolha do tipo de avaliação:** O estudante pode optar por avaliação discreta ou avaliação por exame final. Esta opção será feita usando a plataforma **PACO**- portal académico de apoio à unidade curricular ([https://paco.ua.pt/](https://padlet.com/redirect?url=https%3A%2F%2Fpaco.ua.pt%2F)).
+
+**Época de recurso:** De acordo com o REUA todos os estudantes que não obtenham aprovação na avaliação discreta ou por exame final na época normal de exames estão automaticamente inscritos na época de recurso. A data e hora do exame final na época de recurso será fixada pelo calendário de exames a divulgar pelo Conselho Pedagógico. A classificação final na época de recurso corresponde à nota obtida no respetivo exame.
+
+- **Notas superiores a 18:** Em qualquer uma das épocas (normal e recurso) poderá ser exigida uma **prova de avaliação complementar**, caso o estudante pretenda candidatar-se a uma nota final superior a 18 valores. A data de realização desta prova será fixada pela responsável da unidade curricular.
+
+REGIME DE FALTAS:
+Nos termos do Regulamento de Estudos da Universidade de Aveiro (REUA), para efeitos da monitorização da assiduidade, as presenças dos estudantes serão registadas no PACO. No entanto, não serão contabilizadas faltas para efeitos de reprovação.
+
+OT:
+As aulas OT destinam-se, fundamentalmente, ao acompanhamento da evolução
+do estudante, ao esclarecimento de dúvidas e à resolução de exercícios.
+Os horários das aulas OT são os seguintes:
+OTC-2
+(António Pereira)
+2ª feira 17h00-18h00 11.1.27
+OTC-4,5
+(Domenico Catalano)
+3ª feira 18h00-19h00 11.1.32
+OTC-3,6,9
+(Paolo Vettori)
+4ª feira 14h00-15h00 11.1.31
+OTC-7,8
+(Natália Martins/
+Helena Gonçalves)
+5ª feira 13h00-14h00 11.1.26
+OTC-1
+(Tatiana Tchemisova)
+6ª feira 14h00-15h00 11.2.25
+Nota: Os estudantes podem frequentar as aulas OT que desejarem.
