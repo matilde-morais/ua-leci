@@ -4,4 +4,4 @@
 
 ### Recursos:
 
-- [https://www.youtube.com/channel/UCQYMhOMi_Cdj1CEAU-fv80A](https://www.youtube.com/@nesoacademy)
+- https://www.youtube.com/@nesoacademy
